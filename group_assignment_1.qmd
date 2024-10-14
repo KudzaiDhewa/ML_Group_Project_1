@@ -1,0 +1,96 @@
+---
+title: "Group Assignment 1: Predicting Flight Delays"
+subtitle: "Stat 253"
+author: "Your Names"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    code-tools: true
+---
+
+
+```{r}
+#| include: false
+# Load packages
+# if your group needs any other packages, add them here
+library(tidyverse)
+library(tidymodels)
+
+# Resolves package conflicts by preferring tidymodels functions
+tidymodels_prefer()
+```
+
+
+# Research Goals
+
+*Instructions: Briefly describe your goals for this report. Provide some context to understand your goals.*
+
+
+
+# Data
+
+*Instructions: Briefly describe your training data, making sure to answer the 5 W's (+H) we discuss in STAT 155 (who, what, where, when, why, how). Give insight into the outcome and summary (not an exhaustive list) of available predictors. You may use 1 visualization in this section.*
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+# read in data
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+# visualization
+```
+
+
+
+
+# Model Building
+
+*Instructions: Describe the process by which you came up with the final model. This does not include every step you took but rather the final path your group decided on to build a model. Make sure to clearly JUSTIFY all of your choices.*
+
+
+
+# Implementation
+
+*Instructions: Implement the process you've described above. We'll "fold" this code into a "details" environment in Quarto so the reader can choose whether or not they want to view the code. I set this up for you (`<details>`, `<summary>...</summary>`, `</details>`) -- do not remove these.*
+
+We used tidymodels to implement this model building process. See code below for full details.
+
+<details>
+<summary>View Code</summary>
+
+
+```{r}
+#| message: false
+#| warning: false
+# YOUR CODE HERE
+# Notes about Recipe: If you find yourself using mutate on Flights_Train, use step_mutate() in the recipe instead. This will allow you to make the same adjustments in the Test Data. If you find yourself wanting to exclude some predictors, use step_rm() instead of select(). 
+```
+</details>
+
+
+# Model Evaluation
+
+*Instructions: Evaluate your final model based on the four questions: Is it strong? Is it good? Is it accurate in predictions? Is it fair? Include evidence to support your answers. You may use up to 3 visualizations in this section.* 
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+# visualization
+```
+
+
+
+# Contributions
+
+*Instructions: Describe each student's concrete contribution to this project. Please be specific and honest.*
+
+
+
